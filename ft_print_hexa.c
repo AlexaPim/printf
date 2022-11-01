@@ -6,7 +6,7 @@
 /*   By: ado-prad <ado-prad@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/26 21:32:06 by ado-prad          #+#    #+#             */
-/*   Updated: 2022/10/26 23:18:59 by ado-prad         ###   ########.fr       */
+/*   Updated: 2022/11/02 00:21:07 by ado-prad         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 int	ft_print_hexa(unsigned long number, int flag)
 {
-	int count;
+	int	count;
 
 	count = 0;
 	if (number >= 16)

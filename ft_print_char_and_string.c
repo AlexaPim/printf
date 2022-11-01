@@ -1,12 +1,12 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   print_char_and_string.c                            :+:      :+:    :+:   */
+/*   ft_print_char_and_string.c                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: ado-prad <ado-prad@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/18 19:08:38 by ado-prad          #+#    #+#             */
-/*   Updated: 2022/10/26 20:51:24 by ado-prad         ###   ########.fr       */
+/*   Updated: 2022/11/02 00:23:18 by ado-prad         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,8 +14,7 @@
 
 int	ft_putchar(char c)
 {	
-	write (1, &c, 1);
-	return (1);
+	return (write (1, &c, 1));
 }
 
 int	ft_putstr(char *str)
@@ -24,13 +23,14 @@ int	ft_putstr(char *str)
 
 	i = 0;
 	if (!str)
-		ft_putchar("(null)", 6);
-	while (str[i] != '\0')
+		return (write(1, "(null)", 6));
+	else
 	{
-		ft_putchar(str[i]);
-		i++;
+		while (*(str + i))
+		{
+			write(1, (str + i), 1);
+			i++;
+		}
+		return (i);
 	}
-	return (i);
 }
-
-
