@@ -6,7 +6,7 @@
 /*   By: ado-prad <ado-prad@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/18 14:01:33 by ado-prad          #+#    #+#             */
-/*   Updated: 2022/11/02 00:23:03 by ado-prad         ###   ########.fr       */
+/*   Updated: 2022/11/02 00:26:07 by ado-prad         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,7 +20,7 @@ int	ft_printf(const char *format, ...)
 	count = 0;
 	if (!format)
 		return (-1);
-	va_start (list, format); //inicializamos, passando o nome da variável args e o último elemento conhecido, no nosso caso format 
+	va_start (list, format);
 	while (*format)
 	{
 		if (*format == '%')
